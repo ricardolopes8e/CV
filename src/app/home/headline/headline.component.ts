@@ -8,9 +8,9 @@ import { Component, Input, OnChanges, OnInit } from '@angular/core';
 export class HeadlineComponent implements OnInit, OnChanges {
 
   @Input() English: any;
-  public name: string = "MY NAME";
-  public titleEnglish: string = "TITLE";
-  public titleEspanol: string = 'TITULO';
+  public name: string = "Ricardo Lopes";
+  public titleEnglish: string = "My CV";
+  public titlePortuguese: string = 'O meu Currículo';
 
   public title = this.titleEnglish;
   constructor() { }
@@ -22,7 +22,7 @@ export class HeadlineComponent implements OnInit, OnChanges {
     if (this.English) {
       this.title = this.titleEnglish;
     } else {
-      this.title = this.titleEspanol;
+      this.title = this.titlePortuguese;
     }
   }
 

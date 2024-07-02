@@ -16,7 +16,7 @@ export class HeaderComponent implements OnInit {
     awards: 'AWARDS'
   };
 
-  public menuEspanol: any = {
+  public menuPortuguese: any = {
     home: 'INICIO',
     profile: 'PERFIL',
     skills: 'HABILIDADES',
@@ -40,7 +40,7 @@ export class HeaderComponent implements OnInit {
     this.English = !this.English;
     this.lenguage.emit(this.English);
     if (!this.English) {
-      this.menu = this.menuEspanol;
+      this.menu = this.menuPortuguese;
     } else {
       this.menu = this.menuEnglish;
     }
