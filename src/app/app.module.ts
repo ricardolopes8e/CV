@@ -24,7 +24,8 @@ const routes: Routes = [
     HeadlineComponent,
     ProfileComponent,
     ResumeComponent,
-    SkillsComponent
+    SkillsComponent,
+    AwardsComponent
   ],
   imports: [
     BrowserModule,
